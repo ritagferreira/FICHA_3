@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA 3 EXERCÍCIO 3</title>
+</head>
+<body>
+    
+    <script>
+        const grades = [
+            {
+                name:'Rui',
+                grade: 8
+            },
+            {
+                name: 'Ana',
+                grade: 12
+            },
+            {
+                name: 'Carla',
+                grade: 14
+            }]
+
+            grades.push({ name: 'Marco', grade: 17})
+
+            let totalSum = 0;
+            for(let i=0; i<grades.lenght;i++) {
+                totalSum = totalSum + grades[i].grade
+            }
+
+            const media = totalSum / grades.lenght;
+
+            console.log(media)
+
+            let positive = ''
+        for (let notas of grades) {
+            if (notas.grade > 10) {
+                positive += `${notas.name} \n`
+            }
+        }
+ 
+        console.log(positive)  
+
+
+    </script>
+</body>
+</html>

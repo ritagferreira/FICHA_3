@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA 3 EXERCÍCIO 2</title>
+</head>
+<body>
+
+    <script>
+        const student = {
+            name: "David Silva",
+            course: "POO",
+            grade: 12
+        }
+
+        function listProperty(obj) {
+            return Object.keys(obj);
+            }
+
+        console.log(listProperty(student))
+
+        function removeProperty(obj) {
+            console.log('Antes de remover a propriedade grade', obj);
+
+            delete obj.grade;
+
+            console.log('Depois de remover a propriedade grade', obj)
+        }
+
+        function objectSize(obj) {
+            return Object.keys(obj).length;
+        }
+
+        console.log(objectSize(student));
+    </script>
+    
+</body>
+</html>
